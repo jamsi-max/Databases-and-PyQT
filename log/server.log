@@ -1,0 +1,11 @@
+2020-07-21 15:27:07,326 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> server.py -> function:server = Server(addr, port) !!!
+2020-07-21 15:27:07,328 - INFO - decorators:wrapper:31 - ()- MainThread - The "args_validation" function is called from the module -> server.py -> function:server = Server(addr, port) !!!
+2020-07-21 15:27:07,330 - INFO - decorators:wrapper:31 - ()- MainThread - The "event_loop" function is called from the module -> server.py -> function:server.event_loop() !!!
+2020-07-21 15:27:29,248 - INFO - decorators:wrapper:31 - ()- MainThread - The "accept_connection" function is called from the module -> server.py -> function:server.event_loop() !!!
+2020-07-21 15:27:29,256 - INFO - decorators:wrapper:31 - ()- MainThread - The "broadcast" function is called from the module -> server.py -> function:server.event_loop() !!!
+2020-07-21 15:27:33,506 - INFO - decorators:wrapper:31 - ()- MainThread - The "handle" function is called from the module -> server.py -> function:server.event_loop() !!!
+2020-07-21 15:27:33,513 - INFO - decorators:wrapper:31 - ()- MainThread - The "broadcast" function is called from the module -> server.py -> function:server.event_loop() !!!
+2020-07-21 15:27:36,586 - INFO - decorators:wrapper:31 - ()- MainThread - The "handle" function is called from the module -> server.py -> function:server.event_loop() !!!
+2020-07-21 15:27:36,591 - INFO - decorators:wrapper:31 - ()- MainThread - The "broadcast" function is called from the module -> server.py -> function:server.event_loop() !!!
+2020-07-21 15:27:39,616 - INFO - decorators:wrapper:31 - ()- MainThread - The "handle" function is called from the module -> server.py -> function:server.event_loop() !!!
+2020-07-21 15:27:39,621 - INFO - decorators:wrapper:31 - ()- MainThread - The "broadcast" function is called from the module -> server.py -> function:server.event_loop() !!!

@@ -1,0 +1,4 @@
+2020-07-21 15:27:26,051 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-21 15:27:29,242 - INFO - decorators:wrapper:31 - ()- MainThread - The "args_validation" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-21 15:27:29,252 - INFO - decorators:wrapper:31 - ()- Thread-2 - The "receive" function is called from the module -> /home/device/.pyenv/versions/3.7.0/lib/python3.7/threading.py -> function:self._bootstrap_inner() !!!
+2020-07-21 15:27:29,253 - INFO - decorators:wrapper:31 - ()- Thread-1 - The "send_message" function is called from the module -> /home/device/.pyenv/versions/3.7.0/lib/python3.7/threading.py -> function:self._bootstrap_inner() !!!
