@@ -86,14 +86,16 @@ class Server:
 
     @LogInfo('full')
     def broadcast(self, message, client_socket):
-        message_command = message.split()[1]
+        message_prefix = message.split()
 
-        if message_command in self.clients.values():
+        if message_prefix[1] in self.clients.values():
             for client, name in self.clients.items():
-                if name == message_command:
-                    message = ' '.join(message.split()[2:])
+                if name == message_prefix[1]:
+                    message_prefix.remove(message_prefix[1])
+                    message_prefix.insert(0, '(private)')
+                    message = ' '.join(message_prefix)
                     client.send(message.encode(DEFAULT_ENCODING))
-        elif message_command == 'user':
+        elif message_prefix == 'user':
             user_list = '\n'.join([_ for _ in self.clients.values()])
             client_socket.send(user_list.encode(DEFAULT_ENCODING))
         else:
