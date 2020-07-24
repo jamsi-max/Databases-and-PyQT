@@ -73,3 +73,4 @@ class Client:
 if __name__ == '__main__':
     addr, port = get_args()
     client = Client(addr, port)
+
