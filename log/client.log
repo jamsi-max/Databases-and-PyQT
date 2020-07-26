@@ -137,3 +137,29 @@ ConnectionRefusedError: [Errno 111] Connection refused
 2020-07-22 01:12:31,462 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
 2020-07-22 01:12:32,062 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
 2020-07-22 01:12:32,514 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-23 00:19:30,621 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-23 00:19:30,626 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-23 00:19:47,641 - INFO - decorators:wrapper:31 - ()- MainThread - The "args_validation" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-23 00:19:47,651 - INFO - decorators:wrapper:31 - ()- Thread-2 - The "receive" function is called from the module -> /home/device/.pyenv/versions/3.7.0/lib/python3.7/threading.py -> function:self._bootstrap_inner() !!!
+2020-07-23 00:19:47,652 - INFO - decorators:wrapper:31 - ()- Thread-1 - The "send_message" function is called from the module -> /home/device/.pyenv/versions/3.7.0/lib/python3.7/threading.py -> function:self._bootstrap_inner() !!!
+2020-07-23 00:19:51,328 - INFO - decorators:wrapper:31 - ()- MainThread - The "args_validation" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-23 00:19:51,335 - INFO - decorators:wrapper:31 - ()- Thread-2 - The "receive" function is called from the module -> /home/device/.pyenv/versions/3.7.0/lib/python3.7/threading.py -> function:self._bootstrap_inner() !!!
+2020-07-23 00:19:51,340 - INFO - decorators:wrapper:31 - ()- Thread-1 - The "send_message" function is called from the module -> /home/device/.pyenv/versions/3.7.0/lib/python3.7/threading.py -> function:self._bootstrap_inner() !!!
+2020-07-23 00:19:58,604 - ERROR - decorators:wrapper:37 - ()- Thread-1 - ERROR NAME:  !!!
+Traceback (most recent call last):
+  File "/home/device/Рабочий стол/Databases and PyQT/common/decorators.py", line 34, in wrapper
+    result = func(*args, **kwargs)
+  File "client.py", line 69, in send_message
+    message = f'{input()}'
+EOFError
+2020-07-23 23:33:30,941 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-23 23:33:30,955 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-23 23:41:56,292 - INFO - decorators:wrapper:31 - ()- MainThread - The "__init__" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-23 23:41:58,336 - INFO - decorators:wrapper:31 - ()- MainThread - The "args_validation" function is called from the module -> client.py -> function:client = Client(addr, port) !!!
+2020-07-23 23:41:58,337 - ERROR - decorators:wrapper:37 - ()- MainThread - ERROR NAME: [Errno 111] Connection refused !!!
+Traceback (most recent call last):
+  File "/home/device/Рабочий стол/Databases and PyQT/common/decorators.py", line 34, in wrapper
+    result = func(*args, **kwargs)
+  File "client.py", line 29, in __init__
+    self.client_socket.connect(args_validation(addr, port))
+ConnectionRefusedError: [Errno 111] Connection refused
