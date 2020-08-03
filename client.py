@@ -14,18 +14,17 @@ from common.utils import (
     get_args
     )
 
+from common.metaclass import ClientVerifier
 from common.decorators import LogInfo
 
 
-class Client:
+class Client(metaclass=ClientVerifier):
     client_socket = socket(AF_INET, SOCK_STREAM)
     event = threading.Event()
-    nickname = ''
 
     @LogInfo('full')
     def __init__(self, addr, port):
         self.nickname = input('Input your nickname: ')
-
         self.client_socket.connect(args_validation(addr, port))
 
         send_message_thread = threading.Thread(

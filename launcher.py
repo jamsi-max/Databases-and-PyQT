@@ -2,10 +2,12 @@ import subprocess
 from platform import system
 import sys
 
+from common.decorators import LogInfo
 
+@LogInfo('full')
 def main(count=2):
     if system() == 'Linux':
-        subprocess.Popen(['gnome-terminal', '-e', 'python server.py'])
+        subprocess.Popen(['gnome-terminal', '-e', 'python server.py -p 7777'])
         for _ in range(count):
             subprocess.Popen(['gnome-terminal', '-e', 'python client.py'])
     elif system() == 'Windows':

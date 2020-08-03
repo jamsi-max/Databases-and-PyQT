@@ -52,3 +52,4 @@ def get_args():
     args = parse.parse_args()
 
     return (args.a, args.p)
+

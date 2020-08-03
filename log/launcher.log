@@ -1,0 +1,38 @@
+2020-08-03 18:21:55,006 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:23:21,589 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:23:50,984 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:24:14,088 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:24:28,146 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:25:30,686 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:26:32,920 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:27:13,034 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:33:57,792 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:38:33,736 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:38:53,782 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:39:11,612 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:49:29,478 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:49:29,492 - ERROR - decorators:wrapper:37 - ()- MainThread - ERROR NAME: name 'x' is not defined !!!
+Traceback (most recent call last):
+  File "/home/device/Рабочий стол/Databases and PyQT/common/decorators.py", line 34, in wrapper
+    result = func(*args, **kwargs)
+  File "launcher.py", line 11, in main
+    print(x.decode('utf-8'))
+NameError: name 'x' is not defined
+2020-08-03 18:50:04,538 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:52:32,437 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:53:28,815 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:54:22,738 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:54:40,801 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 18:56:17,651 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 23:45:42,330 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 23:47:32,346 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 23:50:37,453 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 23:51:25,847 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-03 23:52:27,998 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-04 00:00:24,566 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-04 00:02:31,133 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-04 00:02:52,600 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main(int(sys.argv[1])) !!!
+2020-08-04 00:03:51,385 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main() !!!
+2020-08-04 00:04:49,310 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main() !!!
+2020-08-04 00:08:39,121 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main() !!!
+2020-08-04 00:11:51,089 - INFO - decorators:wrapper:31 - ()- MainThread - The "main" function is called from the module -> launcher.py -> function:main() !!!

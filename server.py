@@ -1,4 +1,5 @@
 import selectors
+import sys
 from socket import (
     socket,
     AF_INET,
@@ -17,12 +18,20 @@ from common.utils import (
     args_validation,
     get_args
     )
+
+from common.metaclass import ServerVerifier
+from common.descriptor import (
+    PortVerifier,
+    AddrVerifier
+    )
 from common.decorators import LogInfo
 
 
-class Server:
+class Server(metaclass=ServerVerifier):
     server_socket = socket(AF_INET, SOCK_STREAM)
     clients = {}
+    _port = PortVerifier()
+    _addr = AddrVerifier()
 
     selector = selectors.DefaultSelector()
 
@@ -32,8 +41,15 @@ class Server:
             SOL_SOCKET,
             SO_REUSEADDR,
             1)
-        self.server_socket.bind(args_validation(addr, port))
+        
+        self._port = port
+        self._addr = addr
+        if not self._port or not self._addr:
+            sys.exit(1)
+
+        self.server_socket.bind((self._addr, self._port))
         self.server_socket.listen()
+        print('Server started!')
 
         self.selector.register(
             fileobj=self.server_socket,
